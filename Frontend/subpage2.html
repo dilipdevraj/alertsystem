@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Information</title>
+  <style>
+    /* Updated CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #54606d;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      font-family: "Roboto";
+      margin: 20px 0;
+     
+    }
+   
+    .flex{
+    display: flex;
+    align-items: center;
+
+ }
+ .company-logo img{
+    width: 60px;
+    height: auto;
+    
+    
+ }
+
+ .container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+   
+ }
+nav{
+    background-color: #a5b1be;
+    box-shadow: 0 0 20px black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    max-height: 100px;
+
+ }
+
+ li{
+    list-style: none;
+ }
+
+ .main-nav{
+    justify-content: space-between;
+    padding-block: 1px;
+ }
+ 
+.nav-link ul{
+gap: 30px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color: var(--seconadry-text-color);
+}
+
+.hover-link:active{
+    color: red;
+}
+
+.nav-item.active{
+  color: var(--accent-color);
+}
+.nav-item a{
+    text-decoration : none;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    opacity: 70%;
+}
+.search-bar{
+    gap: 8px;
+    height: 32px;
+}
+
+
+    .driver-card {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      background-color: #a3afbf;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    
+      /* add small vertical lines as separation in between elements of driver card*/
+    
+    }
+    .driver-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      margin-right: 20px;
+      float: left;
+    }
+    .driver-details {
+      float: left;
+      display: flex;
+      flex-direction: row;
+    }
+    .driver-id {
+      color: #4b0909;
+    }
+    h2 {
+      margin: 0;
+      color: #07305c;
+      
+    }
+    h3 {
+      margin: 0;
+      color: #333;
+      border-left: 2px solid #6066db; /* Dark red border on left side */
+      /*suggest some semi visible color for border8*/
+
+      padding-left: 20px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="index.html" class="company-logo">
+          <img src="logo3.png" alt="Company Logo">
+      </a>
+      <div class="nav-link">
+          <ul class="flex">
+              <li class="hover-link nav-item" id="compare" onclick="onNavItemClick('compare')"><a href="subpage1.html">COMPARE</a></li>
+              <li class="hover-link nav-item" id="dealer" onclick="onNavItemClick('driver')"><a href="subpage2.html">DRIVER</a></li>
+              <li class="hover-link nav-item" id="service" onclick="onNavItemClick('service')"><a href="sub1.html">SERVICE</a></li>
+              <li class="hover-link nav-item" id="review" onclick="onNavItemClick('review')"><a href="sub1.html">REVIEW</a></li>
+          </ul>
+      </div>
+  </nav>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  
+  <!-- Driver cards -->
+  <div class="driver-card">
+    <h2 class="idcolor">Driver ID: <span class="driver-id">001</span></h2>
+    <h3>Name: Birju Chacha1</h3>
+    <h3>Age: 42</h3>
+    <h3>Experience :<span class="driver-id"> 9 year</span></h3>
+    <h3>Rating :<span class="driver-id"> 7.5/10 </span></h3>
+    <img class="driver-photo" src="brk.jpeg" alt="Driver Photo">
+  </div>
+
+  <div class="driver-card">
+    <h2 class="idcolor">Driver ID: <span class="driver-id">002</span></h2>
+    <h3>Name: Somu Sood</h3>
+    <h3>Age: 35<h3>
+    <h3>Experience:<span class="driver-id">15 year</span></h3>
+    <h3>Rating :<span class="driver-id"> 9/10 </span></h3>
+    <img class="driver-photo" src="srb.jpg" alt="Driver Photo">
+  </div>
+
+  <div class="driver-card">
+    <h2 class="idcolor">Driver ID: <span class="driver-id">003</span></h2>
+    <h3>Name: Dilip Damad</h3>
+    <h3>Age: 23</h3>
+    <h3>Experience:<span class="driver-id">1 year</span></h3>
+    <h3>Rating :<span class="driver-id"> 8/10 </span></h3>
+    <img class="driver-photo" src="driver3.jpeg" alt="Driver Photo">
+  </div>
+
+  <div class="driver-card">
+    <h2 class="idcolor">Driver ID: <span class="driver-id">004</span></h2>
+    <h3>Name: Kullu Manali</h3>
+    <h3>Age: 35</h3>
+    <h3>Experience:<span class="driver-id">6 year</span></h3>
+    <h3>Rating :<span class="driver-id"> 7/10 </span></h3>
+    <img class="driver-photo" src="driver1.png" alt="Driver Photo">
+  </div>
+
+  <div class="driver-card">
+    <h2 class="idcolor">Driver ID: <span class="driver-id">005</span></h2>
+    <h3>Name: Bunty Budhak</h3>
+    <h3>Age: 41</h3>
+    <h3>Experience:<span class="driver-id">13 year</span></h3>
+    <h3>Rating :<span class="driver-id"> 6/10 </span></h3>
+    <img class="driver-photo" src="driver5.jpeg" alt="Driver Photo">
+  </div>
+
+  <div class="driver-card">
+    <!-- <img class="driver-photo" src="driver2.jpg" alt="Driver Photo">
+    <h2>Driver ID: <span class="driver-id">004</span></h2>
+    <h3>Name: Jane Smith</h3>
+    <h3>Age: 20</h3> -->
+    <h2 class="idcolor">Driver ID: <span class="driver-id">006</span></h2>
+    <h3>Name: Brak Obuma</h3>
+    <h3>Age: 25</h3>
+    <h3>Experience:<span class="driver-id">2 year</span></h3>
+    <h3>Rating :<span class="driver-id"> 5/10 </span></h3>
+    <img class="driver-photo" src="driver2.png" alt="Driver Photo">
+  </div>
+
+
+
+  <!-- Add more driver cards as needed -->
+
+</body>
+</html>

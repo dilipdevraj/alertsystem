@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #a5b1be;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #808f9c;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .review {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .review .author {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .review .date {
+        font-style: italic;
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .review .content {
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4d6074;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    #reviewForm {
+        display: none;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Customer Reviews</h1>
+    <div class="review">
+        <div class="author">Rahul Sharma</div>
+        <div class="date">April 2, 2024</div>
+        <div class="content">
+            <p>As a long-haul truck driver, I've relied on Alert-On-Go's driver awakening system for years now, and it's been an absolute game-changer for me. The alarm feature has saved me from potential accidents countless times, especially during those late-night drives when fatigue kicks in. I feel much safer on the road knowing that Alert-On-Go has my back. Highly recommended!</p>
+        </div>
+    </div>
+    <div class="review">
+        <div class="author">Samantha Jena</div>
+        <div class="date">April 3, 2024</div>
+        <div class="content">
+            <p>I've been using Alert-On-Go's driver awakening system for my daily commute, and I'm impressed with its effectiveness. The alarm is loud enough to wake me up without being too jarring, and it has significantly reduced my risk of drowsy driving incidents. The peace of mind it provides is priceless. Thank you, Alert-On-Go, for keeping me safe on the road!</p>
+        </div>
+    </div>
+    <div class="review">
+        <div class="author">Manash Mohanty</div>
+        <div class="date">April 4, 2024</div>
+        <div class="content">
+            <p>Alert-On-Go's driver awakening system is a must-have for anyone who spends long hours behind the wheel. I've seen a noticeable improvement in my alertness and focus since I started using it. The alarm is easy to set up and use, and the device itself is compact and unobtrusive. I wouldn't drive without it!</p>
+        </div>
+    </div>
+    <button class="btn" id="writeReviewBtn">Write a Review</button>
+    <form id="reviewForm">
+        <textarea rows="5" cols="50" placeholder="Write your review here..."></textarea><br>
+        <button class="btn" type="submit">Submit Review</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('writeReviewBtn').addEventListener('click', function() {
+        document.getElementById('reviewForm').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>

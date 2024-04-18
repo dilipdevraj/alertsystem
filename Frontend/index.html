@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Alert-On-Go</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <!-- Adding logo -->
+        <div class="main-nav container flex">
+            <a href="index.html" class="company-logo">
+                <img src="logo3.png" alt="Company Logo">
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="compare" onclick="onNavItemClick('compare')"><a href="subpage1.html">COMPARE</a></li>
+                    <li class="hover-link nav-item" id="dealer" onclick="onNavItemClick('driver')"><a href="subpage2.html">DRIVER</a></li>
+                    <li class="hover-link nav-item" id="service" onclick="onNavItemClick('service')"><a href="contact.html">CONTACT</a></li>
+                    <li class="hover-link nav-item" id="review" onclick="onNavItemClick('review')"><a href="review.html">REVIEW</a></li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Drivers">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="heading">
+            <h1 class="head1">Alert-On-Go</h1>
+            <div class="blocktext">
+                 <h2 class="head2">"your drive, our alert"</h2>
+                 <h5 class="head5">based in India</h5>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

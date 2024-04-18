@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Information</title>
+    <!-- <link rel="stylesheet" href="substyle1.css"> -->
+    <style>
+      /* Updated CSS styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #54606d;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        font-family: "Roboto";
+        margin: 20px 0;
+       
+      }
+     
+      .flex{
+      display: flex;
+      align-items: center;
+  
+   }
+   .company-logo img{
+      width: 60px;
+      height: auto;
+      
+      
+   }
+  
+   .container{
+      max-width: 1180px;
+      margin-inline: auto;
+      overflow: hidden;
+     
+   }
+  nav{
+      background-color: #a5b1be;
+      box-shadow: 0 0 20px black;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 99;
+      max-height: 100px;
+  
+   }
+  
+   li{
+      list-style: none;
+   }
+  
+   .main-nav{
+      justify-content: space-between;
+      padding-block: 1px;
+   }
+   
+  .nav-link ul{
+  gap: 30px;
+  }
+  
+  .hover-link{
+      cursor: pointer;
+  }
+  
+  .hover-link:hover{
+      color: var(--seconadry-text-color);
+  }
+  
+  .hover-link:active{
+      color: red;
+  }
+  
+  .nav-item.active{
+    color: var(--accent-color);
+  }
+  .nav-item a{
+      text-decoration : none;
+      color: rgb(0, 0, 0);
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      opacity: 70%;
+  }
+  .search-bar{
+      gap: 8px;
+      height: 32px;
+  }
+  
+  
+      .driver-card {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        background-color: #a3afbf;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      
+        /* add small vertical lines as separation in between elements of driver card*/
+      
+      }
+      .driver-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin-right: 20px;
+        float: left;
+      }
+      .driver-details {
+        float: left;
+        display: flex;
+        flex-direction: row;
+      }
+      .driver-id {
+        color: #4b0909;
+      }
+      h2 {
+        margin: 0;
+        color: #07305c;
+        
+      }
+      h3 {
+        margin: 0;
+        color: #333;
+        border-left: 2px solid #6066db; /* Dark red border on left side */
+        /*suggest some semi visible color for border8*/
+  
+        padding-left: 20px;
+      }
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="index.html" class="company-logo">
+          <img src="logo3.png" alt="Company Logo">
+      </a>
+      <div class="nav-link">
+          <ul class="flex">
+              <li class="hover-link nav-item" id="compare" onclick="onNavItemClick('compare')"><a href="subpage1.html">COMPARE</a></li>
+              <li class="hover-link nav-item" id="dealer" onclick="onNavItemClick('driver')"><a href="subpage2.html">DRIVER</a></li>
+              <li class="hover-link nav-item" id="service" onclick="onNavItemClick('service')"><a href="sub1.html">SERVICE</a></li>
+              <li class="hover-link nav-item" id="review" onclick="onNavItemClick('review')"><a href="sub1.html">REVIEW</a></li>
+          </ul>
+      </div>
+  </nav>
+  
+  <br>
+  <br>
+  
+  
+  
+  <!-- Driver cards -->
+    <div id="drivers-container">
+      <br>
+  <br>
+    </div>
+
+    <script src="subscript1.js"></script> <!-- Add your JavaScript file -->
+</body>
+</html>
